@@ -13,7 +13,6 @@ typealias ActionBlock = (_ action: UIPreviewAction, _ controller: UIViewControll
 let defaultCellHeight: CGFloat = 216
 let mainAppColor: UIColor = .red
 
-
 class EventDetailViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
@@ -21,13 +20,21 @@ class EventDetailViewController: UIViewController {
     @IBOutlet weak var footerButton: UIBarButtonItem!
     @IBOutlet weak var rateButton: UIButton!
     @IBOutlet var ratingAlertView: RatingAlert!
-    
     @IBOutlet var viewTapGestureRecognizer: UITapGestureRecognizer!
     
     // MARK: Important store a reference for Preview Interaction
     var ratePreviewInteraction: Any?
     
-    var isPreviewed: Bool?
+    var isPreviewed: Bool? {
+        didSet {
+            if let isPreviewed = isPreviewed,
+                let footerToolBar = footerToolBar,
+                let rateButton = rateButton {
+                footerToolBar.isHidden = isPreviewed
+                rateButton.isHidden = isPreviewed
+            }
+        }
+    }
     var currentEvent: Event?
     var editMode: Bool?
     
@@ -38,6 +45,7 @@ class EventDetailViewController: UIViewController {
         
         // Conditional
         if let currentEvent = currentEvent, currentEvent.isSelected {
+            
             // MARK: Selected style no need handler example
             let isSelected = UIPreviewAction(title: "Going", style: .selected, handler: { (action, viewController) in
                 

@@ -21,8 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         DataManager.sharedInstance.syncEvents()
    
+        var performAdditionalHandling = false
+
         if let shortcutItem = launchOptions?[UIApplicationLaunchOptionsKey.shortcutItem] as? UIApplicationShortcutItem {
-            let _ = handelSshortcutAction(shortcutItem: shortcutItem)
+            performAdditionalHandling = handleShortcutAction(shortcutItem: shortcutItem)
         }
         
         // MARK: Add Dynamic Home Screen Quick Actions
@@ -42,7 +44,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.mainApp()
         UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.darkGray]
         
-        return false
+        return performAdditionalHandling
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -68,13 +70,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
         
         // MARK: Handel Quick Actions
-        let didHandel = handelSshortcutAction(shortcutItem: shortcutItem)
+        let didHandel = handleShortcutAction(shortcutItem: shortcutItem)
         completionHandler(didHandel)
     }
     
     //MARK: Private
     
-    fileprivate func handelSshortcutAction(shortcutItem: UIApplicationShortcutItem) -> Bool {
+    fileprivate func handleShortcutAction(shortcutItem: UIApplicationShortcutItem) -> Bool {
         var didHandel = false
 
         if (shortcutItem.type == staticActionTypeKey) {

@@ -167,10 +167,14 @@ extension ListViewController: UIViewControllerPreviewingDelegate {
         }
 
         let event = allEvents[indexPath.row]
+        
         if let eventDetailViewController = EventDetailViewController.detailViewController(event: event) {
+            
             let cellRect = tableView.rectForRow(at: indexPath)
             let sourceRect = previewingContext.sourceView.convert(cellRect, from: tableView)
+            
             previewingContext.sourceRect = sourceRect
+            
             eventDetailViewController.isPreviewed = true
             
             return eventDetailViewController
