@@ -77,15 +77,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //MARK: Private
     
     fileprivate func handleShortcutAction(shortcutItem: UIApplicationShortcutItem) -> Bool {
-        var didHandel = false
+
+        var didHandle = false
 
         if (shortcutItem.type == staticActionTypeKey) {
             if let eventDetailViewController = EventDetailViewController.detailViewController(event: nil),
                 let root = window?.rootViewController {
                 root.show(eventDetailViewController, sender: nil)
-                didHandel = true
+                didHandle = true
             }
-            didHandel = false
+            didHandle = false
         }
         
         if (shortcutItem.type == dynamicActionTypeKey) {
@@ -95,11 +96,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let eventDetailViewController = EventDetailViewController.detailViewController(event: event),
                 let root = window?.rootViewController {
                 root.show(eventDetailViewController, sender: nil)
-                didHandel = true
+                didHandle = true
             }
-            didHandel = true
+            didHandle = true
         }
-        return didHandel
+        
+        return didHandle
     }
 }
 
