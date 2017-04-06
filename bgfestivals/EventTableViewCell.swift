@@ -25,7 +25,7 @@ class EventTableViewCell: UITableViewCell {
             return
         }
         eventTitleLabel?.text = event.title
-        eventDateLabel?.text = (event.startDate as! Date).toString()
+        eventDateLabel?.text = (event.startDate! as Date).toString()
         eventDescriptionLabel?.text = event.eventDescription
 
         if event.isSelected {

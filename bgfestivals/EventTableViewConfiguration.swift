@@ -71,7 +71,7 @@ enum EventDetailSection: Int {
             let cell = tableView.dequeueReusableCell(withIdentifier: cellSectionIdentifier(index: index)) as! RightTextFieldTableViewCell
             cell.titleLabel.text = "Start Date"
             if let event = currentEvent {
-                cell.textField.text = (event.startDate as! Date).toString()
+                cell.textField.text = (event.startDate! as Date).toString()
             }
             cell.textField.isUserInteractionEnabled = false
             return cell
@@ -79,7 +79,7 @@ enum EventDetailSection: Int {
             let cell = tableView.dequeueReusableCell(withIdentifier: cellSectionIdentifier(index: index)) as! RightTextFieldTableViewCell
             cell.titleLabel.text = "End Date"
             if let event = currentEvent {
-                cell.textField.text = (event.endDate as! Date).toString()
+                cell.textField.text = (event.endDate! as Date).toString()
             }
             cell.textField.isUserInteractionEnabled = false
             return cell

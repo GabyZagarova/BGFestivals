@@ -141,23 +141,23 @@ class EventDetailViewController: UIViewController {
     // MARK: Private actions
     
     fileprivate func deleteEvent() {
-        print("Delete event \(currentEvent?.title)")
+        print("Delete event \(String(describing: currentEvent?.title))")
     }
     
     fileprivate func createEvent() {
-        print("Create event \(currentEvent?.title)")
+        print("Create event \(String(describing: currentEvent?.title))")
     }
     
     fileprivate func shareEvent() {
-        print("Share event \(currentEvent?.title)")
+        print("Share event \(String(describing: currentEvent?.title))")
     }
     
     fileprivate func addEventToGoingList() {
-        print("Add \(currentEvent?.title) to going list")
+        print("Add \(String(describing: currentEvent?.title)) to going list")
     }
     
     fileprivate func putRatingToEvent(rating: Double) {
-        print("Rate \(currentEvent?.title)")
+        print("Rate \(String(describing: currentEvent?.title))")
     }
     
     // MARK: Rating alert
