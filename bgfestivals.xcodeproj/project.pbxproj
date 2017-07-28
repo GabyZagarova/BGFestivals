@@ -17,6 +17,7 @@
 		8925566F1E75E2AB00CF54DF /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8925566E1E75E2AB00CF54DF /* EventDetailViewController.swift */; };
 		892556711E75EB1E00CF54DF /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892556701E75EB1E00CF54DF /* ListViewController.swift */; };
 		892556751E75F7F500CF54DF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892556741E75F7F500CF54DF /* DataManager.swift */; };
+		89542B8E1F016834006CE97F /* DatePickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89542B8D1F016834006CE97F /* DatePickerTableViewCell.xib */; };
 		F68FF4331E795C26006AD2E5 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68FF4321E795C26006AD2E5 /* ColorExtensions.swift */; };
 		F6AD214B1E784B1300C29E27 /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AD214A1E784B1300C29E27 /* EventTableViewCell.swift */; };
 		F6AEDE201E81280400D9E432 /* ImageViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AEDE1F1E81280400D9E432 /* ImageViewTableViewCell.swift */; };
@@ -65,6 +66,7 @@
 		8925566E1E75E2AB00CF54DF /* EventDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		892556701E75EB1E00CF54DF /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		892556741E75F7F500CF54DF /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		89542B8D1F016834006CE97F /* DatePickerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DatePickerTableViewCell.xib; sourceTree = "<group>"; };
 		F68FF4321E795C26006AD2E5 /* ColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		F6AD214A1E784B1300C29E27 /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		F6AEDE1F1E81280400D9E432 /* ImageViewTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewTableViewCell.swift; sourceTree = "<group>"; };
@@ -131,12 +133,9 @@
 				8925566C1E75E0EC00CF54DF /* Database */,
 				8925566B1E75E0DE00CF54DF /* Controllers */,
 				8925566D1E75E11700CF54DF /* Views */,
-				8925563E1E75E0BB00CF54DF /* Main.storyboard */,
-				892556461E75E0BB00CF54DF /* LaunchScreen.storyboard */,
-				892556441E75E0BB00CF54DF /* Assets.xcassets */,
-				F6B15E061E7AD03100B093F8 /* eventsList.json */,
-				892556491E75E0BB00CF54DF /* Info.plist */,
+				89DB2B9A1F2B6A4300AECE51 /* Storyboards */,
 				F68FF4341E795C46006AD2E5 /* Extensions */,
+				89DB2B991F2B6A2C00AECE51 /* Resources */,
 			);
 			path = bgfestivals;
 			sourceTree = "<group>";
@@ -183,6 +182,7 @@
 				F6D599AD1E76B0350019BF48 /* TextViewTableViewCell.swift */,
 				F6D599AF1E76BB8C0019BF48 /* RightTextFieldTableViewCell.swift */,
 				F6D599B11E76BBA30019BF48 /* DatePickerTableViewCell.swift */,
+				89542B8D1F016834006CE97F /* DatePickerTableViewCell.xib */,
 				F6AD214A1E784B1300C29E27 /* EventTableViewCell.swift */,
 				F6AEDE1F1E81280400D9E432 /* ImageViewTableViewCell.swift */,
 				F6AEDE211E81288800D9E432 /* TextFieldTableViewCell.swift */,
@@ -190,6 +190,25 @@
 				FD2287A01E829F6D003BC016 /* RatingButton.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		89DB2B991F2B6A2C00AECE51 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F6B15E061E7AD03100B093F8 /* eventsList.json */,
+				892556491E75E0BB00CF54DF /* Info.plist */,
+				892556441E75E0BB00CF54DF /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		89DB2B9A1F2B6A4300AECE51 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8925563E1E75E0BB00CF54DF /* Main.storyboard */,
+				892556461E75E0BB00CF54DF /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 		F68FF4341E795C46006AD2E5 /* Extensions */ = {
@@ -314,6 +333,7 @@
 			files = (
 				F6B15E071E7AD03100B093F8 /* eventsList.json in Resources */,
 				892556481E75E0BB00CF54DF /* LaunchScreen.storyboard in Resources */,
+				89542B8E1F016834006CE97F /* DatePickerTableViewCell.xib in Resources */,
 				892556451E75E0BB00CF54DF /* Assets.xcassets in Resources */,
 				892556401E75E0BB00CF54DF /* Main.storyboard in Resources */,
 			);

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4B2BAF81FE7BA7A1E9140BA5520D6138DCAD95A6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "25A097647CDDE000BDC197223B078EA9EF672910" : 9223372036854775807,
+    "4B2BAF81FE7BA7A1E9140BA5520D6138DCAD95A6" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "165034D4-1965-40D2-87BB-78233AFCA8FA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "25A097647CDDE000BDC197223B078EA9EF672910" : "BGFestivalsl\/bgfestivals\/",
+    "4B2BAF81FE7BA7A1E9140BA5520D6138DCAD95A6" : "BGFestivalsl\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "bgfestivals",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "bgfestivals.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/GabyZagarova\/bgfestivals.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "25A097647CDDE000BDC197223B078EA9EF672910"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/gabrielaZagarova\/bgfestivals-full.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4B2BAF81FE7BA7A1E9140BA5520D6138DCAD95A6"
+    }
+  ]
+}
